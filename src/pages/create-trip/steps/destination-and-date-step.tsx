@@ -4,21 +4,24 @@ import { Button } from "../../../components/button";
 import { useState } from "react";
 interface DestinationAndDateStepProps {
   isGuestsInputOpen: boolean;
+  eventStartAndEndDates: DateRange | undefined;
   closeGuestsInput: () => void;
   openGuestsInput: () => void;
+  setDestination: (destination: string) => void;
+  setEventStartAndEndDates: (dates: DateRange | undefined) => void;
 }
 import "react-day-picker/dist/style.css";
 import { format } from "date-fns";
 
 export function DestinationAndDateStep({
   isGuestsInputOpen,
+  eventStartAndEndDates,
   closeGuestsInput,
   openGuestsInput,
+  setDestination,
+  setEventStartAndEndDates,
 }: DestinationAndDateStepProps) {
   const [isDatePickerOpen, setIsDatePickerOpen] = useState(false);
-  const [eventStartAndEndDates, setEventStartAndEndDates] = useState<
-    DateRange | undefined
-  >();
 
   const displayedDate =
     eventStartAndEndDates &&
@@ -43,6 +46,7 @@ export function DestinationAndDateStep({
         <input
           type="text"
           disabled={isGuestsInputOpen}
+          onChange={(event) => setDestination(event.target.value)}
           placeholder="Para onde você vai?"
           className="bg-transparent text-lg placeholder-zinc-400 outline-none flex-1"
         />
