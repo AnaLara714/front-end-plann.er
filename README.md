@@ -1,30 +1,73 @@
-# React + TypeScript + Vite
+# Plann.er
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação de planejamento de viagem desenvolvida durante a NLW Journey realizada pela Rockeseat. 🚀✨
 
-Currently, two official plugins are available:
+## 📌 Funcionalidades do projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- `Criação da viagem`:
+  - Cria a viagem adicionando local, data, convidados e informações de quem está criando
+- `Vizualização de informações da viagem`:
+  - Informa o local e data;
+  - Cria e lista atividades com horários pra os dias;
+  - Lista convidados.
 
-## Expanding the ESLint configuration
+## 📁 Acesso ao projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠️ Abrir e rodar o projeto
 
-- Configure the top-level `parserOptions` property like this:
+Pré-requisito:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- Tenha o npm:
+  ```sh
+  npm install npm@latest -g
+  ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Instalação
+
+1. Clone o projeto na sua máquina
+   ```sh
+   git clone https://github.com/AnaLara714/front-end-plann.er.git
+   ```
+2. Entre na pasta
+   ```sh
+   cd front-end-plann.er
+   ```
+3. Instale as dependências:
+   ```sh
+   npm install
+   ```
+4. Inicie o projeto com o comando:
+   ```sh
+   npm run dev
+   ```
+
+## 👩‍💻 Técnicas e tecnologias usadas no projeto
+
+- React Js + Typescript + Vite
+- Tailwind CSS
+- Consumo de API REST
+- Axios
+- React-router-dom
+- Git
+- Conventional Commits
+
+## 💡 Atualizações futuras
+
+    - Cadastrar links importantes;
+    - Apagar atividades;
+    - Atualizar a pagiana de detalhes da viagem para aterar local e data, adicionar novos convidados;
+    - Gerenciar os estado com context api;
+    - Adicionar variavel de destino e data no modal de confirmação da criação da viagem;
+    - Cadastro de usuários.
+
+## 📝 Informações extras
+
+##### - Projeto baseado na prototipação feita pela Rocketseat: [Link aqui](<https://www.figma.com/design/9KFeukWa7D7vGWfyYGS2Gv/NLW-Journey-•-Planejador-de-viagem-(Community)?node-id=3-376&t=Ex8n9IujXhBs1dXB-0>)
+
+##### - Material complementar utilizado no evento NLW 16, para a tecnologia ReactJS: [Link aqui](https://efficient-sloth-d85.notion.site/ReactJS-914c8f879c2a41c2b116c91d19bfad27)
+
+##### - Informações do evento: [Link aqui](https://efficient-sloth-d85.notion.site/NLW-JOURNEY-Guia-do-evento-c16d91a2edc64f8182585d4bec6d33e9)
+
+##### - API: [Link aqui](https://github.com/rocketseat-education/nlw-journey-nodejs)
+
+##### - Documentação da API: [Link aqui](https://nlw-journey.apidocumentation.com/reference#tag/activities/post/trips/{tripId}/activities)
