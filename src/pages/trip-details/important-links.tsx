@@ -15,21 +15,19 @@ export function ImportantLinks() {
               href="#"
               className="block text-sm text-zinc-400 truncate hover:text-zinc-200"
             >
-              dfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfs
+              https://www.airbnb.com.br
             </a>
           </div>
           <Link2 className="size-5 text-zinc-400 shrink-0" />
         </div>
         <div className="flex items-center justify-between gap-4">
           <div className="space-y-1.5">
-            <span className="block text-zinc-00 text-medium">
-              Reserva do AirBnB
-            </span>
+            <span className="block text-zinc-00 text-medium">Google Maps</span>
             <a
               href="#"
               className="block text-sm text-zinc-400 truncate hover:text-zinc-200"
             >
-              dfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfs
+              https://www.google.com.br/maps/preview
             </a>
           </div>
           <Link2 className="size-5 text-zinc-400 shrink-0" />
