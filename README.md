@@ -23,7 +23,7 @@ Pré-requisito:
   ```
 - Aplique os passos seguintes para o aquivo o back-end e assim utilizar o fron-end com o banco de dados.
   ```sh
-   git clone git@github.com:AnaLara714/backend-planner.git
+   git clone https://github.com/AnaLara714/backend-planner.git
   ```
 
 #### Instalação
