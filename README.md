@@ -13,7 +13,7 @@ Aplicação de planejamento de viagem desenvolvida durante a NLW Journey realiza
 
 ## 📁 Acesso ao projeto
 
-## 🛠️ Abrir e rodar o projeto
+### 🛠️ Abrir e rodar o projeto
 
 Pré-requisito:
 
@@ -21,8 +21,12 @@ Pré-requisito:
   ```sh
   npm install npm@latest -g
   ```
+- Aplique os passos seguintes para o aquivo o back-end e assim utilizar o fron-end com o banco de dados.
+  ```sh
+   git clone git@github.com:AnaLara714/backend-planner.git
+  ```
 
-### Instalação
+#### Instalação
 
 1. Clone o projeto na sua máquina
    ```sh
